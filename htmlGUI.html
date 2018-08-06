@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <title>Case/Issue Search</title>
+</head>
+
+<body>
+
+       
+
+    <table border="5" cellpadding="5" width="100%" style="text-align: center">
+        <tr style = "border:25px">
+            <td class=even>
+                <img src="moto.png" height=150px width="225"></img>
+            </td>
+            <td class="odd">
+
+                <div>
+                <h4 style = "float: left">Source</h4>
+                <div class="dropdown">
+                    <button  class="btn btn-secondary dropdown-toggle" type="button" id="sRelease" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" style = "float: left;font-size: 15px;margin-left: 10px; background-color: rgb(37, 149, 253)">
+                        <p id ="s1">Source<br>Release</p>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li>
+                            <div style="white-space: nowrap" onclick = "change()">
+                                <input type="checkbox" id="s7.1" />7.1</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.2" />7.2</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.3" />7.3</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.4" />7.4</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.5" />7.5</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.6" />7.6
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.7" />7.7</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.8" />7.8</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.9" />7.9</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.10" />7.10</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.11" />7.11</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.12" />7.12</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.13" />7.13</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.14" />7.14</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.15" />7.15</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.16" />7.16</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.17" />7.17</input>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change()">
+                                <input type="checkbox" id="s7.18" />7.18</input>
+                            </div>
+                        </li>
+
+                    </div>
+                </div>
+            </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+
+                <div class="dropdown">
+                        <h4 style = "float: left">Target </h4>
+                        
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="tRelease" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" style = "float: left; font-size: 15px;margin-left: 10px;background-color: rgb(37, 149, 253)">
+                        <p id ="t1">Target<br>Release</p>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.1" />7.1
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.2" />7.2
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.3" />7.3
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.4" />7.4
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.5" />7.5
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.6" />7.6
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.7" />7.7
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.8" />7.8
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.9" />7.9
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.10" />7.10
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.11" />7.11
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.12" />7.12
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.13" />7.13
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.14" />7.14
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.15" />7.15
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.16" />7.16
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.17" />7.17
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap"onclick = "change2()">
+                                <input type="checkbox" id="t7.18" />7.18
+                            </div>
+                        </li>
+
+                    </div>
+                </div>
+
+            </td>
+            <td class="even">
+                <div class="dropdown">
+                    <h3>please select one</h3>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style = "background-color: rgb(117, 185, 248)">
+                        Box
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="overflow:scroll; height:200px;">
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="1" />All linux boxes
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="2" />Anti-Virus
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="3" />ATR
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="4" />AuC Client
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="5" />AuC Server
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="6" />Backhaul Network
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="7" />BAR
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="8" />Base Radio
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="9" />Call Processing
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="10" />CEN
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="11" />Comparator
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="12" />Config MGMT
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="13" />Console AuxIO
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="14" />Consoles Subsystem
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="15" />CSA Server
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="16" />CSA Updater
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="17" />CSA Virtualization Tools
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="18" />CSMS
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="19" />DAM Tool
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="20" />DAS
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="21" />Data/HPD
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="22" />Domain Controller
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="23" />ETI
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="24" />Fault Management
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="25" />Firewall
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="26" />FMS
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="27" />FSA - ALC
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="28" />FSA - AMC
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="29" />FSA4000 RTU
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="30" />GAS
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="31" />Gold Elite
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="32" />InfoVista
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="33" />ISSI Gateway
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="34" />KMF Client
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="35" />KMF Server
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="36" />Lab Equipment
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="37" />License Manager
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="38" />Master Site Services
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="39" />MCC 7500 AIS
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="40" />MCC 7500 OP
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="41" />MCC 7500 VPM
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="42" />Media
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="43" />MGEG
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="44" />MOSCAD GMC
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="45" />MOSCAD GWS
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="46" />MOSCAD SDM 3000
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="47" />MPTT
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="48" />Multiple
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="49" />Multiple NM
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="50" />NICE Logging Recorder
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="51" />NICE Playback Station
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="52" />NM Client
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="53" />OVF Deployment Tool
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="54" />PDG
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="55" />RF Site Subsystem
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="56" />Router
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="57" />SA Equip
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="58" />Secure Product Group
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="59" />Security/IA
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="60" />Site Controller
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="61" />SmartX Site Converter
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="62" />SSS
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="63" />Switch
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="64" />Syslog
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="65" />Terminal Server
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="66" />TMG
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="67" />TNCT
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="68" />TRAK
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="69" />UCS
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="70" />UEM
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="71" />UNC
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="72" />UNS
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="73" />VMS
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="74" />VMS Updater
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="75" />ZCPFW
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="76" />ZDS
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="77" />Zone Controller
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="78" />ZSS
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input type="checkbox" id="79" />other
+                            </div>
+                        </li>
+
+                    </div>
+                </div>
+            </td>
+            <td class="odd">
+                <form>
+                    <div class="form-group">
+                        <label for="customerName">
+                            <h3>Customer Name</h3>
+                        </label>
+                        <input class="form-control" id="cName" placeholder="name">
+                    </div>
+                </form>
+            </td>
+            <td class="even">
+                <h3>Case Type</h3>
+                <div id="list1" class="dropdown-check-list">
+                    <span class="anchor"></span>
+                    <ul id="caseOrIssue" class="items" style="list-style: none; text-align: center">
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input id="case" type="checkbox" />CASE
+                            </div>
+                        </li>
+                        <li>
+                            <div style="white-space: nowrap">
+                                <input id="issue" type="checkbox" on />ISSUE
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+            <td class="odd">
+                <h3>Start Date</h3>
+                <input id="dateStart" type="date" placeholde></input>
+                <h3>End Date</h3>
+                <input id="dateEnd" type="date"></input>
+            </td>
+            <td class="even">
+                <div>
+
+                    <form>
+                        <div class="form-group">
+                            <label for="customerName">
+                                <h3>Name</h3>
+                            </label>
+                            <input class="form-control" id="name" placeholder="name">
+                        </div>
+                    </form>
+
+                </div>
+            </td>
+
+        </tr>
+        <tr style = "border:25px">
+            <td class="even" colspan="6">
+
+                <form>
+                    <div class="form-group">
+                        <label for="userInput">
+                            <h3>Search</h3>
+                        </label>
+                        <input class="form-control" id="searchfield" placeholder="search">
+                    </div>
+                </form>
+            </td>
+            <td class="odd" style="text-align:center">
+                <button onclick="submitted()" type="button" class="btn btn-primary">Submit</button>
+
+            </td>
+        </tr>
+        <tr>
+            <td id="searchResults" class="searchResults" colspan="7" style="padding:1px;border-width: thin" valign="top" ;>
+
+
+
+                <ul style="height:100vh;overflow: scroll; list-style-type: none; padding: 10px;">
+                    <li>
+                        <h2>RESULTS</h2>
+                        <table id="maintableheader" style="width:100%;" cellpadding="5">
+                            <tr style="background-color: rgb(37, 149, 253)">
+
+                                <td width="3%" style="min-width: 54px">
+
+                                </td>
+                                <td width="14%">
+                                    <p>Customer Name</p>
+                                </td>
+                                <td width="10%">
+                                    <p>Box</p>
+                                </td>
+                                <td width="11%">
+                                    <p>Jump</p>
+                                </td>
+                                <td width="6%">
+                                    <p>Case</p>
+                                </td>
+                                <td width="6%">
+                                    <p>Issue</p>
+                                </td>
+                                <td width="14%">
+                                    <p>Date worked on</p>
+                                </td>
+                                <td width="14%">
+                                    <p>Name</p>
+                                </td>
+                                <td width="31%">
+                                    <p>Description</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                        <table style="width:100%;max-height:100vh">
+                            <tbody id="maintable" style="width:100%;padding-right: 17px;box-sizing: content-box; overflow-y:scroll">
+
+                            </tbody>
+                        </table>
+            </td>
+        </tr>
+        </li>
+        </ul>
+    </table>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="app.js"></script>
+    <script src="stylesheet.css"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
